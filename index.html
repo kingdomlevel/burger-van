@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Shopping Cart</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="modal"></div>
+        <h1>Shop</h1>
+        <p class="offer">10% off if you spend £20!</p>
+
+        <section id="products">
+            <ul>
+                <li>
+                    <span class="product-icon">🌭</span>
+                    <p class="product-name">Hot Dog </p>
+                    <button class="cart-button" data-name="Hot Dog" data-price="1.80">🛒 Add to cart</button>
+                    <p class="price">£1.80</p>
+                </li>
+                <li>    
+                    <span class="product-icon">🍔</span>
+                    <p class="product-name">Burger</p>
+                    <button class="cart-button" data-name="Burger" data-price="4.50">🛒 Add to cart</button>
+                    <p class="price">£4.50</p>
+                </li>
+                <li>
+                    <span class="product-icon">🍟</span>
+                    <p class="product-name">Chips</p>
+                    <button class="cart-button" data-name="Chips" data-price="1.20" data-offercode="bogof">🛒 Add to cart</button>
+                    <p class="price">£1.20</p>
+                    <div class="offer">Buy-one-get-one free!</span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+                <table id="cart">
+                    <h3>Your cart <button class="cart-button" onclick="cart.emptyCart()">Empty Cart</button></h3>
+                </table>
+            <label for="loyalty-card">Apply loyalty card discount: </label><input type="checkbox" id="loyalty-card"/>
+        </section>
+
+        
+        <script src="./app.js" async defer></script>
+    </body>
+</html>
