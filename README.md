@@ -18,3 +18,4 @@ Aside from the obvious lack of checkout etc, there are a number of ways this sma
   - The cart does not show what discount has been applied, how much the customer has saved, etc.
   - There is no use of e.g. localStorage in order for the contents of a cart to persist across sessions.
   - Rounding errors: I have not done any great analysis on the way dscounts affect rounding etc. In a real-world situation this would be given some more thought.
+  - If this application was expanded, it would make sense to structure the JS application code into different files, etc.
